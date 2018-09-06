@@ -3,21 +3,216 @@ import { Head } from 'mdx-deck'
 export { default as theme } from './theme'
 
 <Head>
-  <title>Presentation Title</title>
+  <title>HTML/CSS Presentation</title>
 </Head>
 
-# Hello
+# HTML/CSS Presentation
+<code>https://stevenscsc.slack.com</code>
+---
+
+## What is HTML?
+
+* **H**yper**T**ext **M**arkup **L**anguage
+* **Not** a programming language 
+* Most basic building block of the Web
+* Describes and defines the content of a webpage
+
 
 ---
 
-## Edit this file
-
-To create your presentation
+## What HTML doesn't do
+* Style (CSS)
+* Functionality/Behavior (Javascript)
 
 ```notes
-- Create speaker notes in fenced code blocks
+technically you can to style in html, but it's bad practice. it's really using 
+css under the hood
 ```
 
 ---
 
-<https://github.com/jxnblk/mdx-deck>
+## How do I write HTML?
+HTML uses "markup" to annotate text, images, and other content for display in a Web browser using elements.
+
+---
+
+## HTML Elements
+
+![example](https://mdn.mozillademos.org/files/9347/grumpy-cat-small.png)
+```notes
+The opening tag: This consists of the name of the element (in this case, p), wrapped in opening and closing angle brackets. This states where the element begins, or starts to take effect — in this case where the paragraph begins.
+The closing tag: This is the same as the opening tag, except that it includes a forward slash before the element name. This states where the element ends — in this case where the end of the paragraph is. Failing to include a closing tag is one of the common beginner errors and can lead to strange results.
+The content: This is the content of the element, which in this case is just text.
+The element: The opening tag, the closing tag, and the content together comprise the element.
+```
+---
+
+## Some More Elements
+`<head>, <title>, <body>, <header>, <footer>, <article>, <section>, <p>, <div>, <span>, <img>, <aside>, <audio>, <canvas>, <datalist>, <details>, <embed>, <nav>, <output>, <progress>, <video>`
+
+---
+
+## HTML Attributes
+
+![example](https://mdn.mozillademos.org/files/9345/grumpy-cat-attribute-small.png)
+```notes
+The opening tag: This consists of the name of the element (in this case, p), wrapped in opening and closing angle brackets. This states where the element begins, or starts to take effect — in this case where the paragraph begins.
+The closing tag: This is the same as the opening tag, except that it includes a forward slash before the element name. This states where the element ends — in this case where the end of the paragraph is. Failing to include a closing tag is one of the common beginner errors and can lead to strange results.
+The content: This is the content of the element, which in this case is just text.
+The element: The opening tag, the closing tag, and the content together comprise the element.
+```
+---
+
+## Common Elements
+import HTMLEditor from './components/HTMLEditor.js'
+
+<HTMLEditor />
+
+```notes
+headings
+paragraph
+lists
+inputs
+links
+button
+img (cat api)
+```
+
+---
+## Your First Website
+Download the code in Slack and save it in a folder named `index.html`
+---
+import { Split } from 'mdx-deck/layouts'
+
+export default Split
+
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>my first website</title>
+  </head>
+  <body>
+    <h1>my first website!</h1>
+  </body>
+</html>
+```
+### `<!DOCTYPE html>`
+Doctypes are "rules" that the HTML page had to follow to be considered good HTML
+---
+
+export default Split
+
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>my first website</title>
+  </head>
+  <body>
+    <h1>my first website!</h1>
+  </body>
+</html>
+```
+### `<html>...</html>`
+This wraps all the content on the entire page, and is sometimes known as the root element.
+---
+export default Split
+
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>my first website</title>
+  </head>
+  <body>
+    <h1>my first website!</h1>
+  </body>
+</html>
+```
+### `<head>...</head>`
+This element acts as a container for all the stuff you want to include on the HTML page that isn't the content you are showing to your page's viewers.
+---
+export default Split
+
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>my first website</title>
+  </head>
+  <body>
+    <h1>my first website!</h1>
+  </body>
+</html>
+```
+### `<meta charset="utf-8" />`
+Character set your document should use to UTF-8, which includes most characters from the vast majority of human written languages
+---
+export default Split
+
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>my first website</title>
+  </head>
+  <body>
+    <h1>my first website!</h1>
+  </body>
+</html>
+```
+### `<title>...</title>`
+This sets the title of your page, which is the title that appears in the browser tab the page is loaded in. It is also used to describe the page when you bookmark/favourite it.
+---
+export default Split
+
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>my first website</title>
+  </head>
+  <body>
+    <h1>my first website!</h1>
+  </body>
+</html>
+```
+### `<body>...</body>`
+This contains all the content that you want to show to web users when they visit your page, whether that's text, images, videos, games, playable audio tracks, or whatever else.
+---
+## Coding Time!
+---
+## How do I make my website not ugly?
+---
+## Write some CSS!
+---
+## What is CSS?
+* **C**ascading **S**tyle **S**heets
+* Language for specifying how documents are presented to users 
+* Style, Layout, etc.
+---
+## How Important is it?
+```js
+document.querySelectorAll('style,link').forEach(el => el.parentNode.removeChild(el));
+```
+---
+## Let's style.
+---
+## We're not designers.
+We're programmers.
+---
+## Download a Template.
+[https://html5up.net/](https://html5up.net/)
